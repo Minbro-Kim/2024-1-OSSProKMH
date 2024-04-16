@@ -1,3 +1,4 @@
+# 1_5_OSSProj_06_어서옵소_범위_일정_이슈관리
 ## 간트 차트
 <img width="990" alt="간트차트" src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/48cd836d-ecfd-42f2-b264-34277050e14f">
 
