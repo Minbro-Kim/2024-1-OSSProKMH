@@ -36,7 +36,7 @@
 * 차기 회의
    * 2024/04/03
 * 회의사진
-![스크린샷 2024-04-13 133514](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/3a5321b1-066e-47ad-9c4f-e0a6b5e84b7d)
+<img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/e84f9527-03a1-4e19-a9e4-dbaa9830af0e.png" width="500" height="300"/>
 
 
 ## 2차 회의
@@ -104,8 +104,7 @@
 * 차기 회의
    * 2024/04/15
 * 회의사진
-![스크린샷(81)](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/8dba42ac-fa5c-41d9-a90f-846932020f34)
-
+<img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/92bd1742-f5cc-4911-97d2-67c8baa7ef10.png" width="500" height="300"/>
 ## 4차 회의
 
 * 일시: 2024년 4월 15일 오후 7:00
