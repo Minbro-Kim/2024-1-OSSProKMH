@@ -240,6 +240,7 @@ graph TD;
 ### **2.5 추진일정**
 
 <img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/c3148473-8e21-48cf-97b0-8e133f80ac52/%EA%B0%84%ED%8A%B8%EC%B0%A8%ED%8A%B8.png?id=d3d394ff-5ed2-4506-a862-c894ae28fe66&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=6Q2p_2-BtaQyIGuZmKUYOleVp6O23jEvbp8qOAqL3Ys&downloadName=%EA%B0%84%ED%8A%B8%EC%B0%A8%ED%8A%B8.png"/>
+
 ### **2.6 참고문헌**
 
 1. 한국외대 전자출결 관리 시스템 메뉴얼, [https://at2.hufs.ac.kr/guide.html](https://at2.hufs.ac.kr/guide.html)
