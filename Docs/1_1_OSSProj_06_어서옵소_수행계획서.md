@@ -41,8 +41,8 @@
 - 한국외대 - QR출석 시스템
     - 한국외대는 학생들의 접근성과 편의성을 올리기 위해 QR출석 시스템을 도입하였다. 해당 시스템은 교수가 QR코드를 요청했을 시 QR이 담긴 사이트를 제공하며, 학생들은 한국외대 앱을 사용하여 로그인하고 QR코드를 이용하여 출석한다.
 
-<img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/89235abe-a989-40c7-b9ee-d076fbe4f283/Untitled.png?id=b3ec73ea-cd2b-4510-8052-b7ad1558c58a&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=Eu66bxRyAMQ9V49UAZOa5O0luEWtmb_-ahIpNewR1O8&downloadName=Untitled.png" />
-<img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/80d81727-e98d-4268-9660-261fac50bcf9/Untitled.png?id=89427dd8-62ce-47db-9e7f-18c4250cd956&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=lwukWh5jk0q2k0fMyoYz2sQkDz_rNK0B9GhmsBjmKBs&downloadName=Untitled.png"/>
+<img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/1bbd8ad6-609c-46cc-9f32-d955d8b82b19.png" />
+<img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/65c1d9a3-ced2-46b9-95f3-581023ba6e44.png"/>
 
 - 선행 기술과의 차이
     1. 기존 앱은 고정된 QR코드로 강의실에 없는 학생들에게도 공유가 가능하다는 점에서 허위로 출석할 수 있다는 단점이 존재하지만 본 프로젝트에서는 네이버 로그인에서 사용하는 방식을 가져와 15초마다 QR코드를 변경하여 학생들의 허위 출석을 방지하고자 한다.
@@ -52,7 +52,7 @@
 - Github 오픈소스
     - [https://github.com/gurkanucar/jwt-project?tab=readme-ov-file](https://github.com/gurkanucar/jwt-project?tab=readme-ov-file)
     
-    <img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/6482573d-b253-4c7b-a65d-455d0f8c67e7/Untitled.png?id=52981f93-b83d-41ae-b68e-418e5ad17fdd&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=SfnDJsqbhzB3PPfZ1O9ixUE11Ex0ButEVx7vEet51jc&downloadName=Untitled.png"/>
+    <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/f21d44e2-3248-4409-b239-44b93e6257d5.png"/>
     
     - 위 서비스는 Spring-Boot와 React를 사용하여 QR로그인을 구현한 오픈소스로, QR로그인 시 username과 email 주소를 서버에 전달하고, 이를 웹사이트에 전송하여 로그인을 완료하게 되면 웹사이트에 사용자의 정보를 시각화하는 사이트이다. 본 프로젝트에서는 이를 변형하여 QR 출석이 완료되면 사용자명, 기기 고유번호를 서버에 전달하여 참여자들의 출석 정보를 DB에 저장하고 이를 활용하여 출석을 정리하는 기능을 구현하고자 한다.
 
@@ -74,26 +74,26 @@
         - 동국대 공식 홈페이지인 동국대학교 이클래스와 연결은 동국대의 보안적인 이유로 연결하기 어렵다고 판단하여 우리의 프로젝트는 QR출석에 대한 기능을 구현하고 가상의 수업 환경을 구현하여 출석 체크를 진행하고자 한다. 추후에 기능을 모두 구현한 뒤 학교와 컨택하여 학교 홈페이지에 우리의 기능이 적용될 수 있도록 노력할 것이다.
         - 최종 설계 결과물(개발하고자 하는 설계 결과물의 최종 목표)의 형태
             - 만들고자하는 서비스의 **사이트맵** 구조도
-            <img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/ddecebac-b374-49db-96da-aaa88c306cd2/Group_82_(3).png?id=d367ab07-78c3-40ba-9c19-27c77f0aea23&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=3-Z1oXeXQwSunIURPwB7pbDWU7rfXXmwRx3gRGc5zxU&downloadName=Group+82+%283%29.png"/>
+            <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2ae2b43d-bc1a-4865-9d89-4b75b9a028b0.png"/>
                 
             - 프로토타입
-                - 교수 측면
+                - 주최자 측면
                     
-                    <img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/65531b18-6949-4926-b28e-5d74cb1f6eb5/Untitled.png?id=08ec0034-a406-4dc9-ba55-0ca0a0b070cc&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=OZNr0D_7ubwhOEtmoFhjHeNSv0C1KOLr2Sp8xW3UyCA&downloadName=Untitled.png"/>
+                    <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/0e746a92-44d7-4684-a7ca-ecbc09df2072.png"/>
                     
                     - Client 아이디를 통해 접속하고 QR 코드 생성 요청을 전달하면 서버에서 인증 토큰이 저장되어있는 QR을 제공하여 이를 통해 QR코드 출석을 진행한다.
-                - 학생 측면
+                - 참여자 측면
                     
-                    <img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/ab82998e-94ca-4812-85d9-6beef73cf5e2/Untitled.png?id=5e17f08e-cfd3-44da-a623-9dce1a17c787&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=DtZHXtko5WF6Uuto01fKAGlhWSYD0egg2BWt2uzlhu0&downloadName=Untitled.png"/>
+                    <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/12c8c156-cddf-44e0-ac20-198850855758.png"/>
                     
                     - 웹사이트에 접속하여 로그인 후 개인정보를 입력하고 생성된 QR코드를 스캔하여 서버에 개인정보와 함께 전송하여 출석을 인정받을 수 있다.
 - 최종 설계 결과물의 시스템 구성과 기능, 특징 등
     - 서비스 프로세스
     
-    <img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/892bda39-3a41-48ff-9853-f2bfa5db303e/Untitled.png?id=36ceb24a-a90a-4c0c-81d5-7df145e542d5&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=MVI5_xwYrRmCHKLmdTBVYJttCfFgLBcygxDcwPhnwZU&downloadName=Untitled.png"/>
+    <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/a4da9ef0-a418-45fa-ac3d-4b60d03e354e.png"/>
     
-    - Client(교수)가 QR코드를 생성
-    - User(학생)은 앱에 접속하여 QR을 인식하여 QR속 수업 정보가 담긴 수업명과 인증 토큰을 받아, 서버로 전송
+    - Client(주최자)가 QR코드를 생성
+    - User(참여자)은 앱에 접속하여 QR을 인식하여 QR속 수업 정보가 담긴 수업명과 인증 토큰을 받아, 서버로 전송
     - 서버는 발행한 토큰과 수업명을 비교하여 일치 여부 처리하여 db에 저장
     - 출석 마감 시간이 되면 DB에 저장된 출석data를 전송받고 출결을 처리함
     
@@ -224,7 +224,7 @@ graph TD;
         - Jenkins와 GitHub Actions 중 CI/CD를 어떤 선택할지 의견이 나뉘었다. Jenkins로 CI/CD를 구축를 생각하였지만, 서버를 따로 두어야 하고 설정을 따로 해줘야 하기 때문에, 이번 팀프로젝트 규모에는 사용하기 적절하지 않다고 판단하여 GitHub Actions를 사용하기로 결정하였다.
     - architecture
     
-    <img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/6750e634-2425-43ae-b9e0-2d86dd60820d/Untitled.png?id=0bc523b5-c0a0-4e93-86a5-879f39e7fef1&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=kLPsKQaodVK-m0ye_K5_dapM8XZlTsq-Hy3GKWM1kiU&downloadName=Untitled.png"/>
+    <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2fc8d087-c3a0-4917-9a33-ae38f881dbe6.png"/>
     
 
 ### **2.4 기대효과**
@@ -239,7 +239,7 @@ graph TD;
 
 ### **2.5 추진일정**
 
-<img src="https://file.notion.so/f/f/f858758d-95bc-43a4-b922-c2d4652bbc7b/c3148473-8e21-48cf-97b0-8e133f80ac52/%EA%B0%84%ED%8A%B8%EC%B0%A8%ED%8A%B8.png?id=d3d394ff-5ed2-4506-a862-c894ae28fe66&table=block&spaceId=f858758d-95bc-43a4-b922-c2d4652bbc7b&expirationTimestamp=1713412800000&signature=6Q2p_2-BtaQyIGuZmKUYOleVp6O23jEvbp8qOAqL3Ys&downloadName=%EA%B0%84%ED%8A%B8%EC%B0%A8%ED%8A%B8.png"/>
+<img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/1282af7b-c30f-44bc-a034-81763ae90a9f.png"/>
 
 ### **2.6 참고문헌**
 
