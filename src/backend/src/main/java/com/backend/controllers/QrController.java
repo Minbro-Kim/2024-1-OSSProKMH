@@ -28,12 +28,12 @@ import java.io.IOException;
 public class QrController {
 
     @GetMapping("/checkattendance/qr")
-    public ResponseEntity<byte[]> qrToTistory() throws WriterException, IOException {
+    public ResponseEntity<byte[]> qrToAttendance() throws WriterException, IOException {
     	//임시정보
     	String meetingName="OSSProject";
     	String meetingDate = LocalDateTime.now().toString();//현재시간
     	
-    	// QR 코드의 내용으로 사용할 문자열 조합 (예: "모임 이름 - 날짜")
+    	// QR 코드의 내용으로 사용할 문자열 조합 (예: "모임 이름 - 날짜")//추후 변경
         String qrContent = meetingName + " - " + meetingDate;//임시정보
     	// QR 정보
         int width = 300;
