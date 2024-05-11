@@ -31,7 +31,7 @@ public class QrController {
     public ResponseEntity<byte[]> qrToTistory() throws WriterException, IOException {
     	//임시정보
     	String meetingName="OSSProject";
-    	String meetingDate="2024-05-13";
+    	String meetingDate = LocalDateTime.now().toString();//현재시간
     	
     	// QR 코드의 내용으로 사용할 문자열 조합 (예: "모임 이름 - 날짜")
         String qrContent = meetingName + " - " + meetingDate;//임시정보
