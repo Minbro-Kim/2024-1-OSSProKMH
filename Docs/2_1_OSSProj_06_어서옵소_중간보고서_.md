@@ -140,7 +140,7 @@
   - 스마트폰 전용 앱으로 접근성이 떨어진다.
 
 
-#### 4. 선행 기술 비교표
+#### 3. 선행 기술 비교표
 
 |  |         어서옵소 |         한국외대 | 광주교육대 |
 | --- | --- | --- | --- |
@@ -152,7 +152,7 @@
 | 확장성 |              O |              X |X|
 | 장소 제약 없음|              O |              O |X|
 
-- Github 오픈소스
+#### 4. Github 오픈소스
   - [https://github.com/gurkanucar/jwt-project?tab=readme-ov-file](https://github.com/gurkanucar/jwt-project?tab=readme-ov-file)
     <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/f21d44e2-3248-4409-b239-44b93e6257d5">
 
@@ -472,7 +472,7 @@
 ### **2.6 참고문헌**
 
 1. 한국외대 전자출결 관리 시스템 메뉴얼, [https://at2.hufs.ac.kr/guide.html](https://at2.hufs.ac.kr/guide.html)
-2. QR코드를활용한스마트폰기반출석체크시스템, 박선주
+2. 박선주, QR코드를활용한스마트폰기반출석체크시스템, 한국정보교육학회, 2014년 1월.
 
 ### **2.7 성과창출 계획**
 
