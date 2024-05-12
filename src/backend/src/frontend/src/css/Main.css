@@ -1,0 +1,65 @@
+.board-item {
+  background-color: #f9f9f9; /* 게시판 아이템 배경색 */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: black;
+}
+
+.board-item:hover {
+  background-color: #eaeaea; /* 호버 시 배경색 변경 */
+}
+
+.board-item h3 {
+  margin-top: 0;
+  color: black;
+}
+
+.board-item p {
+  margin-bottom: 5px;
+}
+
+.board-item .info {
+  display: flex;
+  justify-content: space-between;
+}
+.board-it {
+  color: black;
+}
+
+.Top {
+  background-color: white;
+  padding-bottom: 10px;
+  border-bottom: 8px solid #f3f3f3;
+}
+.Top li {
+  padding: 10px;
+}
+.Top_Title {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  margin-top: 10px;
+
+  background-color: white;
+}
+
+.Top_Sub {
+  color: black;
+  font-size: 10px;
+  width: 20%;
+  margin-top: 8px;
+
+  background-color: white;
+}
+
+.search-space {
+  font-size: 10px;
+  background-color: #d9d9d9;
+  height: 50%;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: #989898;
+  width: 40%;
+}
