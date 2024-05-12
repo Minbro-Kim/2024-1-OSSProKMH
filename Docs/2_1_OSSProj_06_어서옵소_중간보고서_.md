@@ -526,12 +526,12 @@
 
 ### **2.5 추진일정**
 
-<img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/1282af7b-c30f-44bc-a034-81763ae90a9f">
+<img width="981" alt="간트차트" src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/a2b3383e-6576-4483-bcc7-7403846b467b">
 
 ### **2.6 참고문헌**
 
 1. 한국외대 전자출결 관리 시스템 메뉴얼, [https://at2.hufs.ac.kr/guide.html](https://at2.hufs.ac.kr/guide.html)
-
+2. QR코드를활용한스마트폰기반출석체크시스템, 박선주
 ### **2.7 성과창출 계획**
 
 | 항목        | 세부내용                               | 예상(달성)시기 |
