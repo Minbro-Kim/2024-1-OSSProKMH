@@ -114,7 +114,7 @@
 <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/65c1d9a3-ced2-46b9-95f3-581023ba6e44">
 
 - 선행 기술과의 차이
-\
+
     1. QR 갱신을 통한 허위 출석 방지
     - 기존 앱은 고정된 QR코드로 강의실에 없는 학생들에게도 공유가 가능하다는 점에서 허위로 출석할 수 있다는 단점이 존재하지만 본 프로젝트에서는 네이버 로그인에서 사용하는 방식을 가져와 15초마다 QR코드를 변경하여 학생들의 허위 출석을 방지하고자 한다.
     1. 웹앱 방식 채택
@@ -367,7 +367,7 @@
     - localhost:8090/checkattendance/qr 방문시 화면
   ![스크린샷(85)](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/10067c33-db27-4841-98b3-e09e6e798a40)
 
-  
+
     - 카메라로 스캔시 화면
     ![KakaoTalk_20240512_210004499](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2644554b-de09-4822-8ef9-5d836541b3ee)
 
