@@ -40,7 +40,7 @@
 - 대규모 강의일수록 대리출석이 많이 발생하는데, 학습분위기에 피해를 주고, 수업을 진행하는 교수 뿐만 아니라, 학생들도 공정하지 못한 출석인증 방식으로 눈살을 찌푸리게 한다.
 - 아래 사진에서 볼 수 있듯이 대출 경험자가 대출 미경험자를 뛰어넘어 많은 학생들이 대리출석을 진행하는데 경각심을 갖을 필요가 있다고 생각한다.
 
-<img src="../src/assets/1.png" width="800" height="400"/>
+<img src="../src/assets/1.png" width="1000" height="400"/>
 
 - 디지털 기기의 발달로, 출석이 간편해 지면서 기술적 공백이 발생하고 악의적인 사용을 막을 필요가 존재한다.
 
@@ -131,9 +131,10 @@
 | 확장성         | O        | X        |
 
 - Github 오픈소스
+
   - [https://github.com/gurkanucar/jwt-project?tab=readme-ov-file](https://github.com/gurkanucar/jwt-project?tab=readme-ov-file)
     <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/f21d44e2-3248-4409-b239-44b93e6257d5">
-    
+
     - 위 서비스는 Spring-Boot와 React를 사용하여 QR로그인을 구현한 오픈소스로, QR로그인 시 username과 email 주소를 서버에 전달하고, 이를 웹사이트에 전송하여 로그인을 완료하게 되면 웹사이트에 사용자의 정보를 시각화하는 사이트이다. 본 프로젝트에서는 이를 변형하여 QR 출석이 완료되면 사용자명, 기기 고유번호를 서버에 전달하여 참여자들의 출석 정보를 DB에 저장하고 이를 활용하여 출석을 정리하는 기능을 구현하고자 한다.
 
 ### **2.3 목표 및 내용**
@@ -220,17 +221,16 @@
         <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2ae2b43d-bc1a-4865-9d89-4b75b9a028b0" >
       - 프로토타입
         - 주최자 측면
-            <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/0e746a92-44d7-4684-a7ca-ecbc09df2072">
-            
-            - Client 아이디를 통해 접속하고 QR 코드 생성 요청을 전달하면 서버에서 인증 토큰이 저장되어있는 QR을 제공하여 이를 통해 QR코드 출석을 진행한다.
+          <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/0e746a92-44d7-4684-a7ca-ecbc09df2072">
+          - Client 아이디를 통해 접속하고 QR 코드 생성 요청을 전달하면 서버에서 인증 토큰이 저장되어있는 QR을 제공하여 이를 통해 QR코드 출석을 진행한다.
         - 참여자 측면
-            <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/12c8c156-cddf-44e0-ac20-198850855758" >
-            
-            - 웹사이트에 접속하여 로그인 후 개인정보를 입력하고 생성된 QR코드를 스캔하여 서버에 개인정보와 함께 전송하여 출석을 인정받을 수 있다.
+          <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/12c8c156-cddf-44e0-ac20-198850855758" >
+          - 웹사이트에 접속하여 로그인 후 개인정보를 입력하고 생성된 QR코드를 스캔하여 서버에 개인정보와 함께 전송하여 출석을 인정받을 수 있다.
 * 최종 설계 결과물의 시스템 구성과 기능, 특징 등
+
   - 서비스 프로세스
     <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/a4da9ef0-a418-45fa-ac3d-4b60d03e354e">
-    
+
     - Client(주최자)가 QR코드를 생성
     - User(참여자)은 앱에 접속하여 QR을 인식하여 QR속 수업 정보가 담긴 수업명과 인증 토큰을 받아, 서버로 전송
     - 서버는 발행한 토큰과 수업명을 비교하여 일치 여부 처리하여 db에 저장
@@ -378,7 +378,6 @@
     - Jenkins와 GitHub Actions 중 CI/CD를 어떤 선택할지 의견이 나뉘었다. Jenkins로 CI/CD를 구축를 생각하였지만, 서버를 따로 두어야 하고 설정을 따로 해줘야 하기 때문에, 이번 팀프로젝트 규모에는 사용하기 적절하지 않다고 판단하여 GitHub Actions를 사용하기로 결정하였다.
   - architecture
     <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2fc8d087-c3a0-4917-9a33-ae38f881dbe6">
-
 
 ### **2.4 기대효과**
 
