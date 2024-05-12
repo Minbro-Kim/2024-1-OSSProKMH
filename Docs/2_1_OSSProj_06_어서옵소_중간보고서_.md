@@ -31,16 +31,17 @@
     이에 따라, 효율성과 보안성이 보완된 스마트출석 시스템이 요구된다. QR코드 인증 시스템은 기존 방식보다 빠른 인증을 제공하고, 플로팅 기능을 통해 효율성을 높인다. 15초의 타임아웃을 두어 기존 방식에 비해 허위 출석이 어렵도록 설계하였으며, 학생과 교수자 모두에게 편의성을 제공하고, 출석 인증의 정확성과 신뢰성을 보장함으로써 학습 환경을 개선하고자 한다.
 
 - 기존 화면
-<img src ="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2940aeea-f161-4298-8d6d-3cc0eed6ac5f.png" width="100" height="170"/>
-<img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/592e103c-b463-4536-97b4-06a8e499f4b0.png" width="100" height="170"/>
-<img src ="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/22abf4ea-1309-4b51-b0e3-e234fde8562c.png" width="100" height="170"/>
+
+<img width="100" src ="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2940aeea-f161-4298-8d6d-3cc0eed6ac5f">
+<img width="100" src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/592e103c-b463-4536-97b4-06a8e499f4b0">
+<img width="100" src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/22abf4ea-1309-4b51-b0e3-e234fde8562c"/>
 
 
 ### **(2) 선행기술 및 사례 분석**
 
 - 한국외대 - QR출석 시스템
     - 한국외대는 학생들의 접근성과 편의성을 올리기 위해 QR출석 시스템을 도입하였다. 해당 시스템은 교수가 QR코드를 요청했을 시 QR이 담긴 사이트를 제공하며, 학생들은 한국외대 앱을 사용하여 로그인하고 QR코드를 이용하여 출석한다.
-
+<img src="https://github.com/Minbro-Kim/2024-1-OSSProj/assets/144206885/30aae31f-1456-4f71-add9-bc8d590ae0a7.png" />
 <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/1bbd8ad6-609c-46cc-9f32-d955d8b82b19.png" width="300" height="300"/>
 <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/65c1d9a3-ced2-46b9-95f3-581023ba6e44.png" width="300" height="300"/>
 
