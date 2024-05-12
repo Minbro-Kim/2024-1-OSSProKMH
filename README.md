@@ -83,25 +83,25 @@
   https://github.com/zxing/zxing
 
 #### 3.2 프로젝트 주요 문서 
-[수행계획서](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/1_1_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EC%84%9C.md)
+- [수행계획서](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/1_1_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EC%84%9C.md)
 
-[제안발표자료](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/1_2_OSSProj_%ED%8C%80%EB%B2%88%ED%98%B8_%ED%8C%80%EB%AA%85_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.ppt)
+- [제안발표자료](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/1_2_OSSProj_%ED%8C%80%EB%B2%88%ED%98%B8_%ED%8C%80%EB%AA%85_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.ppt)
 
-[중간보고서](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/2_1_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%A4%91%EA%B0%84%EB%B3%B4%EA%B3%A0%EC%84%9C_.md)
+- [중간보고서](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/2_1_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%A4%91%EA%B0%84%EB%B3%B4%EA%B3%A0%EC%84%9C_.md)
 
-[중간발표자료](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/2_2_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C_.ppt)
+- [중간발표자료](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/2_2_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C_.ppt)
 
-[최종보고서](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/3_1_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C_.md)
+- [최종보고서](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/3_1_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C_.md)
 
-[최종발표자료](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/3_2_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%B5%9C%EC%A2%85%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C_.ppt)
+- [최종발표자료](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/3_2_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%B5%9C%EC%A2%85%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C_.ppt)
 
-[이슈관리](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/issues)
+- [이슈관리](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/issues)
 
-[범위 및 일정관리](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/4_1_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EB%B2%94%EC%9C%84_%EC%9D%BC%EC%A0%95_%EC%9D%B4%EC%8A%88%EA%B4%80%EB%A6%AC.md)
+- [범위 및 일정관리](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/4_1_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EB%B2%94%EC%9C%84_%EC%9D%BC%EC%A0%95_%EC%9D%B4%EC%8A%88%EA%B4%80%EB%A6%AC.md)
 
-[회의록](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/4_2_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%ED%9A%8C%EC%9D%98%EB%A1%9D.md)
+- [회의록](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/4_2_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%ED%9A%8C%EC%9D%98%EB%A1%9D.md)
 
-[제품구성배포운영자료](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/4_3_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%A0%9C%ED%92%88%EA%B5%AC%EC%84%B1%EB%B0%B0%ED%8F%AC%EC%9A%B4%EC%98%81%EC%9E%90%EB%A3%8C.md)
+- [제품구성배포운영자료](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/blob/main/Docs/4_3_OSSProj_06_%EC%96%B4%EC%84%9C%EC%98%B5%EC%86%8C_%EC%A0%9C%ED%92%88%EA%B5%AC%EC%84%B1%EB%B0%B0%ED%8F%AC%EC%9A%B4%EC%98%81%EC%9E%90%EB%A3%8C.md)
 
 #### 3.3 참고자료  
 
