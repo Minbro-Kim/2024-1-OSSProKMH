@@ -132,6 +132,7 @@
   <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/618aa3e6-5224-40e4-8c0f-f8c2651af454">
   
   - 수강생 화면
+  
   ![Untitled (1)](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/d6e0fa0f-8a03-46d3-ae3d-850b15be55e5)
 
 - 장점
