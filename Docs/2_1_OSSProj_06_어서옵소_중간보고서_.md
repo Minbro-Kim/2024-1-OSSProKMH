@@ -244,8 +244,6 @@
 ![중간보고서 블록 다이어그램](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/162423839/8431b7ab-d860-45f2-96b5-ba04fc0fae5b)
 
 
-* 다이어그램 설명 추가 예정
-
 #### 4. 주요 기능 흐름 - 시퀀스 다이어그램
 
 - 출석확인 기능(QR 생성)
