@@ -189,7 +189,7 @@
 
 #### 2. 최종 결과물 기능 - 유스케이스
 
-  <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/78b2087e-a80e-41c7-a205-d8ba454cc386"/>
+  <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/ee8347ef-4e51-4bad-bf5c-5f8bcc285f79">
 
 ※ 모임웹의 전체 구조이다. 실제 개발 예정인 기능은 색으로 표시되어 있다.
 
