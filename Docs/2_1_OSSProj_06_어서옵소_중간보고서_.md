@@ -477,6 +477,9 @@
 
 1. 한국외대 전자출결 관리 시스템 메뉴얼, [https://at2.hufs.ac.kr/guide.html](https://at2.hufs.ac.kr/guide.html)
 2. 박선주, QR코드를활용한스마트폰기반출석체크시스템, 한국정보교육학회, 2014년 1월.
+3. 조유현,"다른 사람인거 모르겠지?"..中유학생, 수업부터 시험까지 통째 대리출석, 파이낸셜 뉴스, https://n.news.naver.com/article/014/0004994892?sid=102 , 2023년 4월.
+4. 이원영, 최아영, 강의실 내에서 쉽게 이뤄지는 대리출석과 출튀, 덕성여대 신문, https://www.dspress.org/news/articleView.html?idxno=531월 , 2015년 3월. 
+5. gukanucar, jwt-project, 깃허브, https://github.com/gurkanucar/jwt-project?tab=readme-ov-file , 2022년 1월
 
 ### **2.7 성과창출 계획**
 
