@@ -250,74 +250,86 @@
 
 - 출석확인 기능(QR 생성)
 
-```mermaid
-sequenceDiagram
-    actor Organizer as 주최자
-    participant Client as 클라이언트
-    participant Server as 서버
-    participant Database as 데이터베이스
+  ```mermaid
+  sequenceDiagram
+      actor Organizer as 주최자
+      participant Client as 클라이언트
+      participant Server as 서버
+      participant Database as 데이터베이스
 
-    Organizer->>Client: 큐알 생성 요청
-    activate Client
-    Client->>Server: 큐알 생성 요청 (모임 정보-ID/Date 포함)
-    activate Server
-    Server->>Database: 모임 정보 조회 요청
-    activate Database
-    Database-->>Database: 모임 정보(Date) 저장
-    Database-->>Server: 모임 정보 응답
-    deactivate Database
-    Server-->>Client: 생성된 큐알 코드 응답
-    deactivate Server
-    deactivate Client
+      Organizer->>Client: 큐알 생성 요청
+      activate Client
+      Client->>Server: 큐알 생성 요청 (모임 정보-ID/Date 포함)
+      activate Server
+      Server->>Database: 모임 정보 조회 요청
+      activate Database
+      Database-->>Database: 모임 정보(Date) 저장
+      Database-->>Server: 모임 정보 응답
+      deactivate Database
+      Server-->>Client: 생성된 큐알 코드 응답
+      deactivate Server
+      deactivate Client
 
-    loop 큐알 갱신
-        activate Client
-        Client->>Server: 큐알 갱신 요청(15초 마다)
-        activate Server
-        Server->>Database: 모임 정보 조회 요청
-        activate Database
-        Database-->>Server: 모임 정보 응답
-        deactivate Database
-        Server-->>Client: 갱신된 큐알 코드 응답
-        deactivate Server
-        deactivate Client
-    end
-```
+      loop 큐알 갱신
+          activate Client
+          Client->>Server: 큐알 갱신 요청(15초 마다)
+          activate Server
+          Server->>Database: 모임 정보 조회 요청
+          activate Database
+          Database-->>Server: 모임 정보 응답
+          deactivate Database
+          Server-->>Client: 갱신된 큐알 코드 응답
+          deactivate Server
+          deactivate Client
+      end
+  ```
+1. 큐알 생성 요청: 주최자는 모임에 대한 큐알 코드를 생성하기 위해 클라이언트에게 요청한다.
+2. 큐알 생성 요청 전송: 클라이언트는 받은 요청을 서버에 전송한다. 이때 모임 정보(ID 및 날짜)가 함께 전달된다.
+3. 모임 정보 조회 요청: 서버는 받은 정보를 기반으로 데이터베이스에 모임 정보를 조회하기 위한 요청을 보낸다.
+4. 모임 정보 저장 및 응답: 데이터베이스는 조회된 모임 정보를 저장하고, 이를 응답으로 서버에 전달한다. 이후 서버는 클라이언트에게 생성된 큐알 코드를 응답으로 전송한다.
+5. 큐알 갱신: 부정출석을 방지하기 위해 일정 간격으로 새로운 큐알코드 생성을 서버에 요청한다. 출석 시간이 종료될 때까지 반복된다.
 
 - 출석 인증 기능(QR 스캔)
-``` mermaid
-sequenceDiagram
-    actor User as 참여자
-    participant Client as 클라이언트
-    participant Server as 서버
-    participant Database as 데이터베이스
+  ``` mermaid
+  sequenceDiagram
+      actor User as 참여자
+      participant Client as 클라이언트
+      participant Server as 서버
+      participant Database as 데이터베이스
 
-    User->> Client: 출석 인증 요청
-    Client->>Server: 출석 인증 요청
-    activate Client
-    activate Server
-    Server->>Database: 모임 출석 정보 조회
-    
-    activate Database
-    Database-->>Server: 모임 출석 정보 응답
-    deactivate Database
-    Server-->>Client: 모임 출석 인증 가능
-    deactivate Server
-    
-    Client->>Client: 카메라 호출
-    
-    Client->>Server: 큐알 코드 스캔 결과 전송 (기기 정보 및 참여자 정보 포함)
-    activate Server
-    Server->>Database: 출석 인증 요청 및 정보 전달(출석/지각 정보)
-    activate Database
-    Database-->>Database: 출석 정보 저장
-    Database-->>Server: 출석 정보 응답
-    deactivate Database
-    Server-->>Client:출석 완료 응답
-    deactivate Client 
-    deactivate Server
- 
-```
+      User->> Client: 출석 인증 요청
+      Client->>Server: 출석 인증 요청
+      activate Client
+      activate Server
+      Server->>Database: 모임 출석 정보 조회
+      
+      activate Database
+      Database-->>Server: 모임 출석 정보 응답
+      deactivate Database
+      Server-->>Client: 모임 출석 인증 가능
+      deactivate Server
+      
+      Client->>Client: 카메라 호출
+      
+      Client->>Server: 큐알 코드 스캔 결과 전송 (기기 정보 및 참여자 정보 포함)
+      activate Server
+      Server->>Database: 출석 인증 요청 및 정보 전달(출석/지각 정보)
+      activate Database
+      Database-->>Database: 출석 정보 저장
+      Database-->>Server: 출석 정보 응답
+      deactivate Database
+      Server-->>Client:출석 완료 응답
+      deactivate Client 
+      deactivate Server
+  
+  ```
+1. 출석 인증 요청: 참여자가 출석을 요청하면, 클라이언트를 통해 서버에 출석 인증 요청이 전송된다.
+2. 모임 출석 정보 조회: 서버는 출석이 가능한지 확인하기 위해 데이터베이스에 모임 출석 정보를 조회하는 요청을 보낸다.
+3. 모임 출석 정보 응답: 데이터베이스는 조회된 모임 출석 정보를 서버에 응답한다.
+4. 모임 출석 인증 가능 여부 전달: 서버는 받은 출석 정보를 기반으로 모임 출석 인증이 가능한지 여부를 클라이언트에게 전달한다.
+5. 카메라 호출: 클라이언트는 출석 인증을 위해 카메라를 호출한다.
+6. 큐알 코드 스캔 결과 전송: 사용자가 카메라를 사용하여 큐알 코드를 스캔하면, 클라이언트를 통해 서버에 스캔 결과가 전송된다. 이때 기기 정보와 참여자 정보가 포함된다.
+7. 출석 정보 저장 및 응답: 서버는 받은 정보를 기반으로 데이터베이스에 출석 정보를 저장하고, 출석 정보에 대한 응답을 클라이언트에게 전달한다.
 
 #### 5. 예상 최종 결과물
 
