@@ -153,7 +153,7 @@
   - 스마트폰 전용 앱으로 접근성이 떨어진다.
 
 #### 3. 선행 기술 비교표
-<img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/a3442eb7-491b-45ec-a4b8-0ebde72e58e8">
+<img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/a5ceeebe-d648-4dd2-af75-9ddef85b599e">
 
 #### 4. Github 오픈소스
 
