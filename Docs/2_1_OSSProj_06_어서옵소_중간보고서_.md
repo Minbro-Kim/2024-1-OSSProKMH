@@ -363,6 +363,17 @@
 
 - QR 출석 시스템 구현
   - QR 생성
+    - Zxing 라이브러리를 활용하여 모임이름과 QR 생성 시간 정보를 담은 큐알 코드를 생성하고 url로 반환한다.
+    - localhost:8090/checkattendance/qr 방문시 화면
+  ![스크린샷(85)](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/10067c33-db27-4841-98b3-e09e6e798a40)
+
+  
+    - 카메라로 스캔시 화면
+    ![KakaoTalk_20240512_210004499](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2644554b-de09-4822-8ef9-5d836541b3ee)
+
+      - 카메라로 QR 코드를 스캔하면 모임 이름과 QR코드가 생성된 시간이 나온다.
+
+
 - DB 구성
 
 ![Untitled](https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/162423839/8d68bb69-fce2-4782-8970-825d569e8903)
