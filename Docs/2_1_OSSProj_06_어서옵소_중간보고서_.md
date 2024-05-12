@@ -285,6 +285,39 @@ sequenceDiagram
 ```
 
 - 출석 인증 기능(QR 스캔)
+``` mermaid
+sequenceDiagram
+    actor User as 참여자
+    participant Client as 클라이언트
+    participant Server as 서버
+    participant Database as 데이터베이스
+
+    User->> Client: 출석 인증 요청
+    Client->>Server: 출석 인증 요청
+    activate Client
+    activate Server
+    Server->>Database: 모임 출석 정보 조회
+    
+    activate Database
+    Database-->>Server: 모임 출석 정보 응답
+    deactivate Database
+    Server-->>Client: 모임 출석 인증 가능
+    deactivate Server
+    
+    Client->>Client: 카메라 호출
+    
+    Client->>Server: 큐알 코드 스캔 결과 전송 (기기 정보 및 참여자 정보 포함)
+    activate Server
+    Server->>Database: 출석 인증 요청 및 정보 전달(출석/지각 정보)
+    activate Database
+    Database-->>Database: 출석 정보 저장
+    Database-->>Server: 출석 정보 응답
+    deactivate Database
+    Server-->>Client:출석 완료 응답
+    deactivate Client 
+    deactivate Server
+ 
+```
 
 #### 5. 예상 최종 결과물
 
