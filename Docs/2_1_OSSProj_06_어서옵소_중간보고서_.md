@@ -175,7 +175,45 @@
 
 * 다이어그램 설명 추가 예정
 
-#### 4. 예상 최종 결과물
+#### 4. 주요 기능 흐름 - 시퀀스 다이어그램
+- 출석확인 기능(QR 생성)
+
+```mermaid
+sequenceDiagram
+    actor Organizer as 주최자
+    participant Client as 클라이언트
+    participant Server as 서버
+    participant Database as 데이터베이스
+
+    Organizer->>Client: 큐알 생성 요청
+    activate Client
+    Client->>Server: 큐알 생성 요청 (모임 정보-ID/Date 포함)
+    activate Server
+    Server->>Database: 모임 정보 조회 요청
+    activate Database
+    Database-->>Database: 모임 정보(Date) 저장
+    Database-->>Server: 모임 정보 응답
+    deactivate Database
+    Server-->>Client: 생성된 큐알 코드 응답
+    deactivate Server
+    deactivate Client
+
+    loop 큐알 갱신
+        activate Client
+        Client->>Server: 큐알 갱신 요청(15초 마다)
+        activate Server
+        Server->>Database: 모임 정보 조회 요청
+        activate Database
+        Database-->>Server: 모임 정보 응답
+        deactivate Database
+        Server-->>Client: 갱신된 큐알 코드 응답
+        deactivate Server
+        deactivate Client
+    end
+```
+- 출석 인증 기능(QR 스캔)
+
+#### 5. 예상 최종 결과물
 
 - 최종 결과물은 QR Login 오픈소스를 활용하여, 동국대 스마트출석의 단점을 보완하고 사용자의 편의성을 높이는 QR 출석을 구현하는 것이다.
 - 최종 설계 결과물의 형태는 웹사이트 형태로 교수는 수업 컴퓨터로 접근하고, 학생들은 모바일 기기로 쉽게 접근하여 학생들의 출석을 완료하고 관리하는 웹사이트가 될 예정이다.
