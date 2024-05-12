@@ -9,3 +9,5 @@ https://flint-polish-c51.notion.site/cc2f9c7637e24dadb42de848e0ef7f7e?v=f123503a
 ### 제안 발표 이후 이슈관리 플랫폼 깃허브로 변경
 * 깃허브 이슈 관리 링크
   https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/issues
+  * 제안발표 질의응답 이슈 관리 링크
+    https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/milestone/1
