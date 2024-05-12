@@ -281,7 +281,7 @@
     - 동국대 공식 홈페이지인 동국대학교 이클래스와 연결은 동국대의 보안적인 이유로 연결하기 어렵다고 판단하여 우리의 프로젝트는 QR출석에 대한 기능을 구현하고 가상의 수업 환경을 구현하여 출석 체크를 진행하고자 한다. 추후에 기능을 모두 구현한 뒤 학교와 컨택하여 학교 홈페이지에 우리의 기능이 적용될 수 있도록 노력할 것이다.
     - 최종 설계 결과물(개발하고자 하는 설계 결과물의 최종 목표)의 형태
       - 만들고자하는 서비스의 **사이트맵** 구조도
-        <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2ae2b43d-bc1a-4865-9d89-4b75b9a028b0" height="800">
+        <img src="https://github.com/CSID-DGU/2024-1-OSSProj-WelcomeOPSO-06/assets/144206885/2ae2b43d-bc1a-4865-9d89-4b75b9a028b0" height="600">
       - 프로토타입
         <img src="../src/assets/5.png" width="1000" height="400" >
 - 최종 설계 결과물의 시스템 구성과 기능, 특징 등
