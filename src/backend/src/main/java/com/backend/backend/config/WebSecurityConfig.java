@@ -46,15 +46,6 @@ public class WebSecurityConfig {
     }
 
 
-    // @Bean
-    // public AuthenticationManager authenticationManager(HttpSecurity http, BCryptPasswordEncoder bCryptPasswordEncoder, UserDetailService userDetailService) throws Exception {
-    //     return http.getSharedObject(AuthenticationManagerBuilder.class)
-    //             .userDetailsService(userService)
-    //             .passwordEncoder(bCryptPasswordEncoder)
-    //             .and()
-    //             .build();
-    // }
-
     @Bean
     public AuthenticationManager authenticationManager(HttpSecurity http, BCryptPasswordEncoder bCryptPasswordEncoder, UserDetailService userDetailService) throws Exception {
         AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);

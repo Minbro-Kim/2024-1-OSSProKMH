@@ -1,4 +1,4 @@
-package com.backend.backend.domain;
+package com.backend.backend.entity;
 
 import java.util.Collection;
 import java.util.List;
@@ -26,7 +26,7 @@ public class User implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", updatable = false)
+    @Column(name = "user_id", updatable = false)
     private Long id;
 
     @Column(name = "email", nullable = false, unique = true)
@@ -46,6 +46,8 @@ public class User implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("user"));
     }
+
+
 
     @Override
     public String getUsername() {
@@ -76,4 +78,6 @@ public class User implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
+    
 }
