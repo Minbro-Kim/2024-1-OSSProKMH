@@ -14,7 +14,6 @@ import lombok.ToString;
 public class AttendRequest {
 
     private Long id;
-    private Long userId;
     private Long meetingId;
     private Date date;
     private AttendStatus attendStatus;

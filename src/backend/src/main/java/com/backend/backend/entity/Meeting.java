@@ -1,5 +1,6 @@
 package com.backend.backend.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,11 +25,20 @@ public class Meeting {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;//자동 아이디
 
-    @ManyToOne
+    @Column(nullable=false, unique=true)
+    private String meetingName;
+
+    @ManyToOne(optional=false)
     @JoinColumn(name = "user_id")
     private User user;//주최자정보
 
     // @Column
     // private Date date;//일시
 
+    public void patch(Meeting meeting) {
+        if(meeting.meetingName != null){
+            this.meetingName= meeting.meetingName;
+        }
+        
+    }
 }
