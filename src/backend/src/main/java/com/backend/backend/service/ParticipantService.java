@@ -2,6 +2,7 @@ package com.backend.backend.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.backend.backend.entity.Meeting;
 import com.backend.backend.entity.Participant;
@@ -9,6 +10,7 @@ import com.backend.backend.entity.User;
 import com.backend.backend.repository.MeetingRepository;
 import com.backend.backend.repository.ParticipantRepository;
 import com.backend.backend.repository.UserRepository;
+
 
 @Service
 public class ParticipantService {
@@ -20,6 +22,7 @@ public class ParticipantService {
     @Autowired
     private ParticipantRepository participantRepository;
 
+    @Transactional
     public Participant register(Long meetingId, String email) {
     
         User user = userRepository.findByEmail(email).orElse(null);
@@ -41,6 +44,7 @@ public class ParticipantService {
         return participantRepository.save(participant);//참여자 등록
     }
 
+    @Transactional
     public Participant withdraw(Long meetingId, String email) {
         User user = userRepository.findByEmail(email).orElse(null);
         

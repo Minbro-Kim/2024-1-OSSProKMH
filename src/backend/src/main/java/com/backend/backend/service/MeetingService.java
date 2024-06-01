@@ -4,12 +4,12 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.backend.backend.dto.MeetingRequest;
 import com.backend.backend.entity.Meeting;
 import com.backend.backend.entity.User;
-import com.backend.backend.repository.MeetingRepository
-;
+import com.backend.backend.repository.MeetingRepository;
 import com.backend.backend.repository.UserRepository;
 
 import lombok.extern.slf4j.Slf4j;
@@ -33,6 +33,7 @@ public class MeetingService {
         return meetingRepository.findById(meetingId).orElse(null);
     }
 
+    @Transactional
     public Meeting create(MeetingRequest dto, String email){
         Meeting newMeeting = toEntity(dto, email);
 
@@ -51,7 +52,7 @@ public class MeetingService {
     }
 
     
-
+    @Transactional
     public Meeting update(Long meetingId, MeetingRequest dto, String email) {
         //엔티티 변환
         Meeting updateMeeting = toEntity(dto,email);

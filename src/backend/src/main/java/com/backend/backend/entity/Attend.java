@@ -1,6 +1,6 @@
 package com.backend.backend.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import com.backend.backend.domain.AttendStatus;
 
@@ -15,10 +15,13 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
+@Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -32,19 +35,24 @@ public class Attend {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;//자동 아이디
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;//참여자정보
+    @ManyToOne(optional=false)
+    @JoinColumn(name = "participant_id")
+    private Participant participant;//참여자 정보
 
-    @ManyToOne
-    @JoinColumn(name = "meeting_id")
-    private Meeting meeting;//모임정보
+    @Column(nullable=false)
+    private LocalDate date;//일시
 
-    @Column
-    private Date date;//일시
-
-    @Enumerated(EnumType.STRING)//열 자동 생성
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
     private AttendStatus attendStatus;//출석정보
+
+
+    @Builder
+    public Attend(Participant participant, LocalDate date, AttendStatus attendStatus) {
+        this.participant = participant;
+        this.date = date;
+        this.attendStatus = attendStatus;
+    }
 
         
 }
